@@ -6,6 +6,7 @@ resource "aws_vpc_endpoint" "interface_endpoint" {
     subnet_ids        = var.subnet_ids
     vpc_endpoint_type = "Interface"
     private_dns_enabled = each.value.private_dns_enabled
+    security_group_ids = var.security_group_ids
     
     tags = {
         Name = "${var.project}-${each.value.name}-endpoint"
