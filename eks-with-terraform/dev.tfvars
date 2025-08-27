@@ -37,3 +37,7 @@ eks_addons = {
   kube-proxy        = "v1.32.0-eksbuild.2"
   aws-ebs-csi-driver = "v1.30.0-eksbuild.1"
 }
+
+#Bastion Host related variables
+bastion_ami = "ami-0c5204531f799e0c6" #Amazon Linux 2 AMI (HVM), SSD Volume Type - ap-south-1
+bastion_instance_type = "t3.micro"

@@ -67,3 +67,11 @@ variable "min_size" {
   type = string
 }
 
+#Bastion Host related variables
+variable "bastion_ami" {
+    type = string
+}
+
+variable "bastion_instance_type" {
+    type = string   
+}
