@@ -1,9 +1,9 @@
 variable "region" {
-    type = string
+  type = string
 }
 
 variable "project" {
-  type        = string
+  type = string
 }
 
 variable "vpc_cidr" {
@@ -11,7 +11,7 @@ variable "vpc_cidr" {
 }
 
 variable "public_subnet_cidrs" {
-  type = list(string)  
+  type = list(string)
 }
 
 variable "availability_zones" {
@@ -28,19 +28,19 @@ variable "allow-to-internt" {
 
 #VPC Endpoint related variables
 variable "services" {
-    type = list(object({
-        name                = string
-        type                = string
-        private_dns_enabled = bool
-    }))
+  type = list(object({
+    name                = string
+    type                = string
+    private_dns_enabled = bool
+  }))
 }
 
 variable "eks_version" {
-    type    = string
+  type = string
 }
 
 variable "instance_types" {
-    type    = list(string)
+  type = list(string)
 }
 
 variable "disk_size" {
@@ -48,7 +48,7 @@ variable "disk_size" {
 }
 
 variable "ami_type" {
-  type = string 
+  type = string
 }
 
 variable "eks_addons" {
@@ -69,9 +69,9 @@ variable "min_size" {
 
 #Bastion Host related variables
 variable "bastion_ami" {
-    type = string
+  type = string
 }
 
 variable "bastion_instance_type" {
-    type = string   
+  type = string
 }
